@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bot' ;
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{
+
+    --cor-degrade:#4be28fad;
+    --cor-0:#c5ebd6;
+    --cor_1: white;
+    --cor_2: #83e1ad;
+    --cor_3: #3ddc84;
+    --cor_4: #2fa866;
+    --cor_5: #1a5c37;
+    --cor_6: #063d1e;
+    
+    --font-bot: 'bot';
+    --font-arial:Arial,Verdana,Helvetica,sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+    
+
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-arial);
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color:var(--cor_2);
+    
+}
+
+
+header{
+    
+    background-image: linear-gradient(to bottom, var(--cor_3), var(--cor_5));
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    width: 100%;
+    min-height: 250px;
+    padding-top: 40px;
+}
+body> header > h1 {
+
+    
+    text-align: center;
+    font-size: 40px;
+    color:var(--cor_1);
+    font-family: 'Bebas Neue', sans-serif;
+
+    
+}
+header>p{
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    color: var(--cor_1);
+    font-size: 20px;
+
+}
+header>nav{
+    margin: 20px;
+    padding-top: 30px;
+    
+}
+
+nav>a{
+
+  padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor_1);
+    font-size: medium;
+    transition-duration: .5s;
+   
+}
+nav>a:hover{
+    border-radius: 10px;
+    background-color: #2fa866;
+}
+
+body>main{
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 0px;
+
+    height: 100%;
+    max-width:  860px;
+ 
+    background-color: var(--cor-0);
+
+}
+main>h1{
+    font-family: var(--font-bot);
+    color: var(--cor_6);
+    padding-bottom: 20px;
+}
+main>h2{
+    font-family: var(--font-bot);
+    color: var(--cor_5) ;
+    background-image: linear-gradient(to right, var(--cor-degrade), transparent);
+}
+main>p{
+    text-indent: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+main>p>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor_6);
+    background-color: var(--cor_4);
+    padding: 0px 10px;
+
+}
+main>p>a::after{
+    content: '🧷';
+}
+main>p>a:hover{
+    text-decoration: underline;
+
+}
+main>.img{
+    text-align: center;
+}
+
+main>.iframe{
+    background-color: var(--cor_5);
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+}
+
+body>main>aside{
+    background-color: var(--cor_3);
+    margin-top:30px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+body>main>aside>h3{
+    background-color: var(--cor_5);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+body>main>aside>p{
+
+    padding: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    
+}
+
+body>main>aside>ul{
+
+    padding: 30px;
+    list-style: '✔️';
+    font-weight: bold;
+}
+
+body>main>aside>ul>li:hover{
+
+        box-sizing: content-box;
+    	background-color: var(--cor_6);
+
+}
+
+body > footer{
+
+    background-color: var(--cor_6);
+    text-align: center;
+    padding: 10px;
+    color: var(--cor_1);
+}

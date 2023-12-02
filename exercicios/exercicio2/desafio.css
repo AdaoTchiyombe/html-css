@@ -1,0 +1,30 @@
+body{
+    color: aliceblue;
+    background-color: rgb(2, 4, 39);
+    
+   }
+   *{
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   h1{
+       color: aliceblue;
+   }
+   ul{
+      color: blanchedalmond;
+   }
+ol{
+    color: blanchedalmond;
+}
+img{
+    border-radius: 75px;
+}
+button{
+    border-radius: 75px;
+    
+}
+video{
+    border-radius: 75px;
+}
+p{
+ text-align: justify;
+}

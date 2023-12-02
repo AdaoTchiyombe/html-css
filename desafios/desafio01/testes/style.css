@@ -1,0 +1,24 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+div{
+        display: inline;
+        height: 100px;
+       
+        width: 100px;
+       
+        background: orange;
+       
+        color: black;
+       
+        padding: 15px;
+       
+        border: 5px solid tan;
+       
+        margin: 15px;
+}
+section{
+
+    text-align: left;
+}

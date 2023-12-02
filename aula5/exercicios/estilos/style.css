@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+div li{
+    display: inline;
+    height: 30px;
+    width: 50px;
+    color: white;
+    background: grey;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 65px;
+}
