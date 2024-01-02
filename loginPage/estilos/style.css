@@ -1,0 +1,164 @@
+@charset "  UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+
+}
+
+body {
+    background-image: linear-gradient(to bottom, #5F2C82, #4C939A);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "photo"
+        "login"
+    ;
+    width:300px ;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.418);
+    transition-duration: .5s;
+
+}
+
+.container > .containerInput {
+    grid-area: login;
+    padding: 20px;
+    text-align: center;
+   
+    
+
+}
+
+.container > .containerInput p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.container > .containerInput >  .inputEmail,.container > .containerInput > .inputPassword {
+    
+    background-color: #5F2C82;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 5px;
+    text-align: right;
+
+}
+
+.containerInput .inputEmail input[type=email] {
+    width: 80%;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    height:30px;
+    padding: 10px;
+
+    background-color: #94CFCD;
+    
+}
+.containerInput .inputPassword input[type=password] {
+    width: 80%;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    height:30px;
+    padding: 10px;
+    background-color: #94CFCD;
+}
+
+.containerInput .inputEmail input[type=email]:active, .containerInput .inputPassword input[type=password]:active {
+  background-color: white;
+}
+
+.containerInput .btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.containerInput .btn .btn1 {
+    background-color:#53AAA7;
+    border: 2px solid #53AAA7;
+    margin-top: 5px;
+    color: white;
+
+    transition-duration: .5s;
+}
+
+.containerInput .btn .btn2 {
+    margin-top:3px;
+    margin-bottom: 10px;
+    border: 2px solid #53AAA7 ;
+    color: #1e7270;
+    
+    
+}
+
+.containerInput .btn .btn1:hover {
+ background-color: #1e7270;
+}
+
+.container > .containerImg {
+    grid-area: photo;
+  background-image: url(../img/pexels-expect-best-323705.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: white;
+        display: grid;
+        grid-template-columns:  1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "photo login"
+        ;
+        width:600px ;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.418);
+    
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        background-color: white;
+        display: grid;
+        grid-template-columns:  2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            " login photo"
+        ;
+        width:700px ;
+        height: 355px;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.418);
+    
+    }
+}
